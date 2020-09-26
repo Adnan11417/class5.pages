@@ -1,0 +1,197 @@
+<html><head><style type="text/css"><meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+body 
+{
+    max-width: 100%; /* fix our max width to 100% of our containing frame */
+    word-wrap: break-word; /* ok to break words if text wrap is needed */
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    
+    font-family: arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100%;
+    
+    line-height: 2px;
+}
+
+.msg_entry 
+{
+    font-family: arial, sans-serif;
+	display: block;
+	font-size: 14px;
+
+    /* webkit extension for rounded boxes, ok if it doesn't work */
+	-webkit-border-radius: 8px;
+	
+	/* gecko extension for rounded boxes, ok if it doesn't work */
+	-moz-border-radius: 8px;
+	
+	/* CCS3 rounded boxes, ok if it doesn't work */
+	border-radius: 8px;
+}
+
+.msg_entry h1 
+{
+	/* webkit extension for rounded boxes, ok if it doesn't work */
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    
+    /* gecko extension for rounded boxes, ok if it doesn't work */
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    
+    /* CCS3 rounded boxes, ok if it doesn't work */
+    -border-bottom-right-radius: 0px;
+    -border-bottom-left-radius: 0px;
+
+    background-color: transparent;
+    
+    margin: 0px 0px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 4px;
+    line-height: 50%;
+}
+
+.msg_entry p 
+{
+	/* webkit extension for rounded boxes */
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    
+    /* gecko extension for rounded boxes */
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-topleft: 0px;
+    
+    /* CCS3 rounded boxes */
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    margin: 0px 0px;
+    line-height: 100%;
+    word-wrap: break-word; /* ok to break words if text wrap is needed */
+}
+
+.msg_entry.chat.welcome, .msg_entry.chat.message
+{
+	background-color: rgb(217, 240, 211);   /* light green */
+	border-color: rgb(217, 240, 211);       /* light green */
+}
+
+.msg_entry.chat.welcome p, .msg_entry.chat.message p
+{
+    background-color: transparent;
+}
+
+.msg_entry.chat.incoming
+{
+    margin-left: 8px;
+    margin-right: 40px;
+}
+
+.msg_entry.chat.outgoing
+{
+    margin-left: 40px;
+    margin-right: 8px;
+}
+
+.msg_entry.chat.incoming, .msg_entry.chat.outgoing
+{
+	background-color: rgb(216, 237, 254);   /* light blue */
+	border-color: rgb(216, 237, 254);       /* light blue */
+}
+
+.msg_entry.chat.incoming h1, .msg_entry.chat.outgoing h1
+{
+	color: rgb(2, 101, 203);                /* blue */
+}
+
+.msg_entry.chat.incoming.to_all
+{
+	background-color: rgb(240, 242, 245);
+}
+
+.msg_entry.chat.outgoing.to_all
+{
+    background-color: rgb(254, 237, 222);
+}
+
+.msg_entry.chat.incoming.to_all h1, .msg_entry.chat.outgoing.to_all h1
+{
+	color: rgb(0, 102, 2);                  /* green */
+}
+
+.msg_entry.chat.incoming.private, .msg_entry.chat.outgoing.private 
+{
+	background-color: rgb(254, 226, 230);
+}
+
+.msg_entry.chat.incoming.private h1, .msg_entry.chat.outgoing.private h1 
+{
+	color: rgb(153, 1, 0);                  /* red */
+}
+
+.chat-header
+{
+    font-size: 12px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a.replyTo
+{
+    color: rgb(0, 106, 500);
+    cursor: pointer;
+}
+
+.outgoing .chat-header
+{
+    color: black;
+}
+
+.timestamp
+{
+    position: relative;
+    float: right;
+    text-align: right;
+    margin-left: 16px;
+    color: darkslategrey;
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.privateDiv
+{
+    font-weight: normal;
+    color: rgb(224, 45, 82);
+    font-size: 14px;
+    padding: 6px 0px;
+}
+
+.privateFooterDiv
+{
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+hr
+{
+    margin-bottom: 10px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(225, 186, 194);
+    padding: 0;
+}
+
+</style>
+</head><body><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:30 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>ge/m everyone</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:31 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>did u guys finished 200 sql hw?</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:52 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>fire ship sndiago?</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:52 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>old news</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:52 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>lol</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>california closed again?</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Inna Lillah wa inna Ilahi rajiun</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Died as a martyr</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:55 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Kanye for president! nothing beats that :)</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:56 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>no more gossip</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">6:59 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:03 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:17 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>>=</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:17 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:17 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>yes it is same</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:17 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100008);return false">Ismayati Kiran</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:17 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>no diff</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:18 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>X>=Y</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:18 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>equal</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">7:18 PM</div>Me to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:18 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100008);return false">Ismayati Kiran</a> to Everyone</div></h1><p>equal</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100008);return false">Ismayati Kiran</a> to Everyone</div></h1><p>no </p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>NO</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div>Me to Everyone</div></h1><p>equal</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">7:19 PM</div>Me to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:21 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>? u mean it could be Y>X too?</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:21 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:22 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Abby he is saying that both ID counts do not have to be exact same</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:23 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>tks fairuz</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:24 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>anytime Ren Xing</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">7:38 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>14596.   599</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:05 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Bhaia doing the oah...haha</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:11 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:11 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:11 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:11 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100008);return false">Ismayati Kiran</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">8:11 PM</div>Me to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:11 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100001);return false">Bintia</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100001);return false">Bintia</a> to Everyone</div></h1><p>complex</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100008);return false">Ismayati Kiran</a> to Everyone</div></h1><p>simple</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>query simple,but output not</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:14 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>read the output</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:15 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>its like excel file </p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:15 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Adnan, it is just an accumulation of data.</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:16 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>why it have duplicate records?</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:19 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>so they gather the data according to client queries and with combination of the info needed, so you get tables. And those tables can be cross referenced. Multiple tables can have same info. And we can dirive simialr information from tables. I think this is what bhaia means and is showing.</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">8:19 PM</div>Me to Everyone</div></h1><p>thank you</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:20 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>tks fairuz, it make sense</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:20 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>anytime :)</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:30 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:31 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:31 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:31 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>good clear</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:31 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100001);return false">Bintia</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:42 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100010);return false">Asif Shakh</a> to Everyone</div></h1><p>here</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:55 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>802</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:56 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:56 PM</div><a class="replyTo" onclick="g2m_app.replyTo(200002);return false">Saif</a> to Everyone</div></h1><p>No</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:57 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>yes, 802 belong to common, common belong to inventory</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:58 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>no because they are not common </p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">8:59 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>sorry my fault , sana u r8</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:01 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>"select f.film_id ,f.title from film"; = that left join query?</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:03 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>no from film left join inventory on .. this one is join query</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:04 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>got it sana,,,there have that on condition</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:05 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p> yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Seeing biriyani triggers hunger :)</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>@Sana!!</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:12 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>lol </p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:13 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>apu in my case its pizza :p</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:13 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>mine noodle</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:13 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Ramen!!</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:13 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>yeah</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:27 PM</div><a class="replyTo" onclick="g2m_app.replyTo(200002);return false">Saif</a> to Everyone</div></h1><p>Yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:52 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100015);return false">KASHEM</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>not upset!</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100017);return false">winsen sid</a> to Everyone</div></h1><p>lol</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:53 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>:)</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div>Me to Everyone</div></h1><p>i told my stomach we will eat 9:30 i triggered real hunger</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100017);return false">winsen sid</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100015);return false">KASHEM</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100008);return false">Ismayati Kiran</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div>Me to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>we r on diet</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:54 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>haha...Adnan! is it a desi time?</p></div><br><div class="msg_entry chat outgoing to_all"><h1><div class="chat-header"><div class="timestamp">9:55 PM</div>Me to Everyone</div></h1><p>ok lol</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:55 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100004);return false">Sana</a> to Everyone</div></h1><p>haha </p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:57 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100006);return false">renxing</a> to Everyone</div></h1><p>y</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:57 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100001);return false">Bintia</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:58 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">9:59 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100017);return false">winsen sid</a> to Everyone</div></h1><p>yes</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">10:03 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100017);return false">winsen sid</a> to Everyone</div></h1><p>no</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">10:04 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100009);return false">Imran</a> to Everyone</div></h1><p>ok thanks</p></div><br><div class="msg_entry chat incoming to_all"><h1><div class="chat-header"><div class="timestamp">10:05 PM</div><a class="replyTo" onclick="g2m_app.replyTo(100012);return false">Fairuz Ahmed</a> to Everyone</div></h1><p>Thanks Bhai. Good night everyone. @Adnan go eat bro</p></div></body></html>
